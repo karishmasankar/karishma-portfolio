@@ -5,115 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KARISHMA S.J | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f9f9fb;
-      color: #222;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(to right, #667eea, #764ba2);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    header p, header a {
-      font-size: 1.1em;
-      color: white;
-      text-decoration: none;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      background-color: #333;
-      padding: 10px;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 8px 15px;
-      transition: background 0.3s;
-    }
-    nav a:hover {
-      background-color: #555;
-      border-radius: 5px;
-    }
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-    h2 {
-      color: #764ba2;
-      margin-bottom: 15px;
-      font-size: 1.8em;
-    }
-    ul, p {
-      margin-bottom: 20px;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin: 15px auto;
-      display: block;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    a {
-      color: #667eea;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .download-button {
-      display: inline-block;
-      padding: 12px 24px;
-      background: #667eea;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-weight: 600;
-      text-decoration: none;
-      margin-top: 20px;
-    }
-    .download-button:hover {
-      background: #5a67d8;
-    }
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2em;
-      }
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
-      section {
-        padding: 20px 15px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header>
-    <h1>KARISHMA S.J</h1>
-    <p>📞 8122403487 | ✉️ karholic1306@gmail.com</p>
-    <p><a href="https://www.linkedin.com/in/karishma-sankar1306">LinkedIn</a> | <a href="https://github.com/karishmasankar">GitHub</a></p>
+  <header class="hero">
+    <img class="profile-image" src="assets/profile.jpeg" alt="Profile Picture">
+    <div class="intro-text">
+      <h1>KARISHMA S.J</h1>
+      <p>📞 8122403487 | ✉️ karholic1306@gmail.com</p>
+      <p><a href="https://www.linkedin.com/in/karishma-sankar1306">LinkedIn</a> | <a href="https://github.com/karishmasankar">GitHub</a></p>
+    </div>
   </header>
 
-  <nav>
+  <nav class="navbar">
     <a href="#highlights">Highlights</a>
     <a href="#education">Education</a>
     <a href="#skills">Skills</a>
@@ -122,55 +26,72 @@
     <a href="#resume">Resume</a>
   </nav>
 
-  <section>
-    <p>I am a Computer Science undergraduate passionate about leveraging technology to develop innovative solutions. My experience includes working on projects like AI-based meal recommendation and VR fitness games, equipping me with skills in programming and UI design. I excel in teamwork, problem-solving, and communication, aiming to continue enhancing my technical and soft skills in a dynamic environment.</p>
+  <main class="content">
+    <section class="summary">
+      <p>I am a Computer Science undergraduate passionate about leveraging technology to develop innovative solutions. My experience includes working on projects like AI-based meal recommendation and VR fitness games, equipping me with skills in programming and UI design. I excel in teamwork, problem-solving, and communication, aiming to continue enhancing my technical and soft skills in a dynamic environment.</p>
+    </section>
 
-    <img src="assets/profile.jpg" alt="Profile Picture">
+    <section class="card-section">
+      <h2 id="highlights">🏆 Highlights</h2>
+      <div class="card">
+        <img src="assets/star-summit.jpeg" alt="Best Poster Award">
+        <p><strong>Best Poster Award</strong> – STAR Tech Summit 2025</p>
+      </div>
+      <div class="card">
+        <img src="assets/sih-glimpse.jpeg" alt="SIH Glimpse">
+        <p><strong>Winner - Smart India Hackathon 2023 (SIH 2023)</strong> – Game Interface Design</p>
+      </div>
+      <div class="card">
+        <img src="assets/sih-award.jpeg" alt="SIH Award">
+        <p>Smart India Hackathon Award Ceremony</p>
+      </div>
+    </section>
 
-    <h2 id="highlights">🏆 Highlights</h2>
-    <ul>
-      <li><strong>Best Poster Award</strong> – STAR Tech Summit 2025</li>
-    </ul>
-    <img src="assets/star-summit.jpeg" alt="Best Poster Award">
-    <ul>
-      <li><strong>Winner - Smart India Hackathon 2023 (SIH 2023)</strong> – Game Interface Design</li>
-    </ul>
-    <img src="assets/sih-glimpse.jpeg" alt="SIH Glimpse">
-    <img src="assets/sih-award.jpeg" alt="SIH Award">
+    <section class="education">
+      <h2 id="education">📚 Education</h2>
+      <ul>
+        <li><strong>B.E. in Computer Science</strong>, Saveetha School of Engineering (2022–2026) – CGPA: 8.6</li>
+        <li><strong>HSC</strong>, Velammal Bodhi Campus (2021–2022) – 74.4%</li>
+        <li><strong>SSLC</strong>, Maharishi Vidya Mandir (2019–2020) – 84%</li>
+      </ul>
+    </section>
 
-    <h2 id="education">📚 Education</h2>
-    <ul>
-      <li><strong>B.E. in Computer Science</strong>, Saveetha School of Engineering (2022–2026) – CGPA: 8.6</li>
-      <li><strong>HSC</strong>, Velammal Bodhi Campus (2021–2022) – 74.4%</li>
-      <li><strong>SSLC</strong>, Maharishi Vidya Mandir (2019–2020) – 84%</li>
-    </ul>
+    <section class="skills">
+      <h2 id="skills">🔧 Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, C, C++, JavaScript, HTML, CSS, SQL</li>
+        <li><strong>Frameworks:</strong> OpenCV, DeepFace, CNN, SVM, RF, Pandas, NumPy</li>
+        <li><strong>Tools:</strong> Unity, Oculus SDK, Figma, Git, FastAPI, Tkinter, VS Code</li>
+        <li><strong>Soft Skills:</strong> Teamwork, Problem Solving, Communication, Fast Learning</li>
+      </ul>
+    </section>
 
-    <h2 id="skills">🔧 Technical Skills</h2>
-    <p><strong>Languages:</strong> Python, C, C++, JavaScript, HTML, CSS, SQL</p>
-    <p><strong>Frameworks:</strong> OpenCV, DeepFace, CNN, SVM, RF, Pandas, NumPy</p>
-    <p><strong>Tools:</strong> Unity, Oculus SDK, Figma, Git, FastAPI, Tkinter, VS Code</p>
-    <p><strong>Soft Skills:</strong> Teamwork, Problem Solving, Communication, Fast Learning</p>
+    <section class="projects">
+      <h2 id="projects">📈 Projects</h2>
+      <ul>
+        <li><strong>Mood2Meal AI</strong>: Real-time emotion-based meal recommender using DeepFace and OpenCV. <a href="https://github.com/karishmasankar/Mood2Meal-AI">GitHub</a></li>
+        <li><strong>VR Fitness Game</strong>: Unity VR game using Oculus SDK. <a href="https://github.com/karishmasankar/Zamshoot-VR">GitHub</a></li>
+        <li><strong>SIH 2023 – Game Interface</strong>: Figma UI for winning team. <a href="https://github.com/karishmasankar/Zamshoot-VR">GitHub</a></li>
+        <li><strong>Pedestrian Detection</strong>: CNN for smart transport. <a href="https://github.com/karishmasankar/linkedIn-stealth-api">GitHub</a></li>
+        <li><strong>Brain Tumor Classification</strong>: Compared ML models for MRI. <a href="https://github.com/karishmasankar/linkedIn-stealth-api">GitHub</a></li>
+      </ul>
+    </section>
 
-    <h2 id="projects">📈 Projects</h2>
-    <ul>
-      <li><strong>Mood2Meal AI</strong>: Real-time emotion-based meal recommender using DeepFace and OpenCV. <a href="https://github.com/karishmasankar/Mood2Meal-AI">GitHub</a></li>
-      <li><strong>VR Fitness Game</strong>: Unity VR game using Oculus SDK. <a href="https://github.com/karishmasankar/Zamshoot-VR">GitHub</a></li>
-      <li><strong>SIH 2023 – Game Interface</strong>: Figma UI for winning team. <a href="https://github.com/karishmasankar/Zamshoot-VR">GitHub</a></li>
-      <li><strong>Pedestrian Detection</strong>: CNN for smart transport. <a href="https://github.com/karishmasankar/linkedIn-stealth-api">GitHub</a></li>
-      <li><strong>Brain Tumor Classification</strong>: Compared ML models for MRI. <a href="https://github.com/karishmasankar/linkedIn-stealth-api">GitHub</a></li>
-    </ul>
+    <section class="certifications">
+      <h2 id="certifications">📚 Certifications</h2>
+      <ul>
+        <li>Oracle SQL Certified Specialist (Jul 2025)</li>
+        <li>NPTEL IoT (71%)</li>
+        <li>NPTEL Software Testing</li>
+        <li>UI/UX – Great Learning</li>
+        <li>Front-End Dev – Udemy</li>
+      </ul>
+    </section>
 
-    <h2 id="certifications">📚 Certifications</h2>
-    <ul>
-      <li>Oracle SQL Certified Specialist (Jul 2025)</li>
-      <li>NPTEL IoT (71%)</li>
-      <li>NPTEL Software Testing</li>
-      <li>UI/UX – Great Learning</li>
-      <li>Front-End Dev – Udemy</li>
-    </ul>
-
-    <h2 id="resume">📄 Download Resume</h2>
-    <a class="download-button" href="assets/Karishma_Resume.pdf" download>Download My Resume</a>
-  </section>
+    <section class="resume">
+      <h2 id="resume">📄 Download Resume</h2>
+      <a class="download-button" href="assets/Karishma_Resume.pdf" download>Download My Resume</a>
+    </section>
+  </main>
 </body>
 </html>
